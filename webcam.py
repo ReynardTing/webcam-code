@@ -188,7 +188,7 @@ if __name__ == "__main__":
                 pt2 = (xmax, ymax)
                 cv2.rectangle(img, pt1, pt2, (0, 255, 0), 2)
                 cv2.putText(img, i[0].decode() + " [" + str(round(i[1] * 100, 2)) + "]", (pt1[0], pt1[1] + 20), cv2.FONT_HERSHEY_SIMPLEX, 1, [0, 255, 0], 4)
-		if r==True or 1:
+		if ret==True or 1:
 			print "Crack " + str(m) + " Detected"
 			pyautogui.screenshot("Crack No."+str(m)+".png")
 			shutil.move("/home/eee/darknet/Crack No."+str(m)+".png", "/home/eee/darknet/Crack imgs/Crack No."+str(m)+".png")
